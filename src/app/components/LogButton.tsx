@@ -10,7 +10,6 @@ export default function LogButton() {
     try {
       const response = await fetch('/api/hello');
       const data = await response.json();
-      console.log(data.message);
       setMessage(data.message);
     } catch (error) {
       console.error('Error fetching message:', error);
