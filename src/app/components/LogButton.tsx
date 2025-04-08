@@ -8,7 +8,7 @@ export default function LogButton() {
 
   const fetchMessage = async () => {
     try {
-      const response = await fetch('/api/hello');
+      const response = await fetch('/app/api/hello');
       const data = await response.json();
       setMessage(data.message);
     } catch (error) {
