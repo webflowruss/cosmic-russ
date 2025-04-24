@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <h1 className={styles.title}>Cosmic is Awesome!!</h1>
+        <h1 className={styles.title}>Emerson is Awesome!!</h1>
         <LogButton />
       </main>
     </div>
