@@ -166,3 +166,13 @@ a.secondary {
     filter: invert();
   }
 }
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 2rem;
+  text-align: center;
+}
