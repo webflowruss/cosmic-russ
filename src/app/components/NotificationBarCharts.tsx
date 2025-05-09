@@ -33,15 +33,19 @@ interface NotificationBarChartsProps {
 
 const NotificationBarCharts: React.FC<NotificationBarChartsProps> = ({ data, timeGranularity }) => {
   const formatTimeKey = (key: string) => {
+    if (timeGranularity === 'quarterly') {
+      const [year, quarter] = key.split('-Q');
+      return `Q${quarter} ${year}`;
+    }
+    
     const date = new Date(key);
     switch (timeGranularity) {
       case 'daily':
         return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
       case 'monthly':
         return date.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
-      case 'quarterly':
-        const quarter = Math.floor(date.getMonth() / 3) + 1;
-        return `Q${quarter} ${date.getFullYear()}`;
+      default:
+        return key;
     }
   };
 
@@ -73,6 +77,8 @@ const NotificationBarCharts: React.FC<NotificationBarChartsProps> = ({ data, tim
           const quarter = Math.floor(date.getMonth() / 3) + 1;
           key = `${date.getFullYear()}-Q${quarter}`;
           break;
+        default:
+          key = date.toISOString().split('T')[0];
       }
       
       if (!groups.has(key)) {
