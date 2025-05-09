@@ -8,7 +8,7 @@ import { mockDashboardData } from './data/mockDashboardData';
 
 export default function Home() {
   const [timeRange, setTimeRange] = useState('30d');
-  const [timeGranularity, setTimeGranularity] = useState<'daily' | 'monthly' | 'quarterly'>('daily');
+  const [timeGranularity, setTimeGranularity] = useState<'daily' | 'monthly' | 'quarterly'>('monthly');
 
   const { currentMetrics, previousPeriodMetrics, timeSeriesData } = mockDashboardData;
 
