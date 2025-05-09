@@ -1,0 +1,185 @@
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.mainContent {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.character {
+  font-size: 4rem;
+  font-weight: 500;
+  color: #1a1a1a;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.character:hover {
+  background: #e9ecef;
+  transform: scale(1.05);
+}
+
+.basicInfo {
+  flex: 1;
+}
+
+.basicInfo h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+  color: #1a1a1a;
+}
+
+.readings {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.reading {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.label {
+  font-weight: 500;
+  color: #666;
+  min-width: 80px;
+}
+
+.srsControls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 1rem;
+}
+
+.srsInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.srsLevel {
+  font-weight: 500;
+  color: #1890ff;
+}
+
+.nextReview {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.srsButtons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.srsButton {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: #1890ff;
+  color: white;
+}
+
+.srsButton:hover {
+  background: #40a9ff;
+}
+
+.srsButton.incorrect {
+  background: #ff4d4f;
+}
+
+.srsButton.incorrect:hover {
+  background: #ff7875;
+}
+
+.detailsButton {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  background: transparent;
+  color: #666;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-bottom: 1rem;
+}
+
+.detailsButton:hover {
+  border-color: #40a9ff;
+  color: #40a9ff;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.detailItem {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.examples {
+  margin-top: 1rem;
+}
+
+.examples h4 {
+  margin: 0 0 0.5rem 0;
+  color: #1a1a1a;
+}
+
+.example {
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem;
+  background: #f8f9fa;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.word {
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.reading {
+  color: #666;
+  font-family: monospace;
+}
+
+.meaning {
+  color: #666;
+  font-style: italic;
+} 

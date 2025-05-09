@@ -6,11 +6,12 @@
   --button-primary-hover: #383838;
   --button-secondary-hover: #f2f2f2;
 
+  min-height: 100vh;
+  background: #f5f5f5;
   display: grid;
   grid-template-rows: 20px 1fr 20px;
   align-items: center;
   justify-items: center;
-  min-height: 100svh;
   padding: 80px;
   gap: 64px;
   font-family: var(--font-geist-sans);
@@ -28,6 +29,9 @@
 }
 
 .main {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -175,4 +179,87 @@ a.secondary {
   -webkit-text-fill-color: transparent;
   margin-bottom: 2rem;
   text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #2A2F45;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+}
+
+.select {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: white;
+  font-size: 0.9rem;
+  color: #2A2F45;
+  cursor: pointer;
+}
+
+.metricsGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.charts {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.chartPlaceholder {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-size: 1.125rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.timeGranularity {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+.granularityButton {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: white;
+  font-size: 0.9rem;
+  color: #2A2F45;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.granularityButton:hover {
+  background: #f5f5f5;
+}
+
+.granularityButton.active {
+  background: #4353FF;
+  color: white;
+  border-color: #4353FF;
 }

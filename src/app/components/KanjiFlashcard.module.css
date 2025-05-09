@@ -1,0 +1,131 @@
+.flashcardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.flashcard {
+  width: 400px;
+  height: 500px;
+  perspective: 1000px;
+  cursor: pointer;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.flashcard.flipped {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+
+.back {
+  transform: rotateY(180deg);
+  overflow-y: auto;
+}
+
+.kanji {
+  font-size: 8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.level {
+  font-size: 1.2rem;
+  color: #666;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  background: #f0f0f0;
+}
+
+.meaning {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.readings {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.readingSection {
+  margin-bottom: 1rem;
+}
+
+.readingSection h4 {
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.readingSection p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.examples {
+  width: 100%;
+}
+
+.example {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: #f8f8f8;
+  border-radius: 10px;
+}
+
+.japanese {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.english {
+  color: #666;
+}
+
+.showExamples {
+  padding: 0.8rem 1.5rem;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.showExamples:hover {
+  background: #357abd;
+}
+
+.nextButton {
+  padding: 1rem 2rem;
+  background: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background 0.3s;
+}
+
+.nextButton:hover {
+  background: #27ae60;
+} 

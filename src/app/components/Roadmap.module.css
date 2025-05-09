@@ -1,0 +1,237 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.headerLeft {
+  flex: 1;
+}
+
+.headerRight {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-end;
+}
+
+.header h1 {
+  margin: 0 0 1rem 0;
+  font-size: 2rem;
+  color: #1a1a1a;
+}
+
+.viewToggle {
+  display: flex;
+  gap: 0.5rem;
+  background: #f0f0f0;
+  padding: 0.25rem;
+  border-radius: 4px;
+}
+
+.viewButton {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  background: transparent;
+  color: #666;
+  transition: all 0.2s ease;
+}
+
+.viewButton:hover {
+  color: #1a1a1a;
+}
+
+.viewButton.active {
+  background: white;
+  color: #1a1a1a;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.progress {
+  margin-top: 1rem;
+}
+
+.progressBar {
+  height: 8px;
+  background: #f0f0f0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.progressFill {
+  height: 100%;
+  background: linear-gradient(90deg, #1890ff, #52c41a);
+  transition: width 0.3s ease;
+}
+
+.progressText {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.addButton {
+  padding: 0.75rem 1.5rem;
+  background: #1890ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.addButton:hover {
+  background: #40a9ff;
+}
+
+.searchAndFilters {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.searchInput {
+  padding: 0.75rem 1rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.searchInput:focus {
+  border-color: #40a9ff;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.filters {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter {
+  padding: 0.5rem 1rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  font-size: 1rem;
+  min-width: 150px;
+  background: white;
+}
+
+.filter:focus {
+  border-color: #40a9ff;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.addForm {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.addForm h2 {
+  margin: 0 0 1.5rem 0;
+  color: #1a1a1a;
+}
+
+.input, .textarea, .select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.input:focus, .textarea:focus, .select:focus {
+  border-color: #40a9ff;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.formButtons {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.saveButton, .cancelButton {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.saveButton {
+  background: #52c41a;
+  color: white;
+}
+
+.saveButton:hover {
+  background: #73d13d;
+}
+
+.cancelButton {
+  background: #f0f0f0;
+  color: #666;
+}
+
+.cancelButton:hover {
+  background: #d9d9d9;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.quarterGroup {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quarterTitle {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+  color: #1a1a1a;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #f0f0f0;
+} 
